@@ -1,0 +1,42 @@
+{
+  "id": "95e436c0-4a9d-4a3f-9964-e7bd3227ba38",
+  "name": "ItemListExtension",
+  "publisher": "Steven Renders",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [
+    {
+      "name": "C5 2012 Data Migration",
+      "publisher": "Microsoft",
+      "version": "1.0.19097.0",
+      "appId": "3d5b2137-eeeb-4014-8489-41d37f8fd4c3"
+    },
+    {
+      "name": "Chicken Management",
+      "publisher": "Steven Renders",
+      "version": "8.0.0.0",
+      "appId": "956db4ab-7833-4fff-b54f-ae53d835462e"
+    },
+    {
+      "name": "Image Analyzer",
+      "publisher": "Microsoft",
+      "version": "1.0.19097.0",
+      "appId": "e868ad92-21b8-4e08-af2b-8975a8b06e04"
+    }
+  ],
+  "screenshots": [],
+  "platform": "11.0.12925.0",
+  "application": "11.0.19097.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  }
+}

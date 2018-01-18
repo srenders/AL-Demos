@@ -1,0 +1,67 @@
+﻿The conversion process is the following:
+1.       Export the objects that you want to convert + their dependencies (for example SourceTables for pages) from C/SIDE using the new finsql command ‘exporttonewsyntax’ – you will need to use the Dev Tools March Update for it. 
+
+Example:
+finsql.exe Command=ExportToNewSyntax, File=resultFile.txt, Database=Navision_Main, ServerName=. ,Filter=Type=table;ID=66668
+2.       Run the txt2al converter tool on the resulting .txt file - the tool supports all objects types apart from MenuSuite and .delta files. Deltas need to be converted manually for now.
+
+Usage: txt2al <Source directory> <Destination directory> [-rename]
+       -rename - Name the output files based on the object name. 
+
+
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T242.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=242
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60000.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60000
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60001.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60001
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60002.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60002
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60003.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60003
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60004.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60004
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60005.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60005
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60006.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60006
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60007.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60007
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60008.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60008
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60009.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60009
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60010.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60010
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60011.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60011
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\T60012.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=table;ID=60012
+
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60000.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60000
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60001.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60001
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60002.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60002
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60003.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60003
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60004.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60004
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60005.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60005
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60006.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60006
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60007.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60007
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60008.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60008
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60009.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60009
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60010.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60010
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60011.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60011
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60012.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60012
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P60013.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=60013
+
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P50006.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=50006
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P50007.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=50007
+
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\P70000.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=page;ID=70000
+
+
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\C60000.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=codeunit;ID=60000
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\C60001.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=codeunit;ID=60001
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\C60002.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=codeunit;ID=60002
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\C60003.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=codeunit;ID=60003
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\C60004.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=codeunit;ID=60004
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\C60005.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=codeunit;ID=60005
+
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\Q60000.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=query;ID=60000
+
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\R60000.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=report;ID=60000
+
+finsql.exe Command=ExportToNewSyntax, File="C:\temp\X60000.txt", Database="Demo Database NAV (10-0) MODIFIED", ServerName="NAV57683-MM88KK\NAVDEMO" ,Filter=Type=xmlport;ID=60000
+
+
+
+txt2al C:\temp\ C:\temp\al
+
+
+
+-settings:"c:\temp\ClientUserSettings.config"

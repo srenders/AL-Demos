@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Your own server",
+            "server": "https://5dbf66904ee4",
+            "serverInstance": "NAV",
+            "tenant": "",
+            "authentication": "UserPassword",
+            "startupObjectId": 22
+        }
+    ]
+}

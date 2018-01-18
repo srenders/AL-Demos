@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Your own server",
+            "server": "https://devprevdecnew.westeurope.cloudapp.azure.com",
+            "serverInstance": "NAV",
+            "tenant": "",
+            "authentication": "UserPassword",
+            "startupObjectId": 50133
+        }
+    ]
+}

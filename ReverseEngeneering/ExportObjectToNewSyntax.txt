@@ -1,0 +1,8 @@
+finsql.exe Command=ExportToNewSyntax, File="C:\Users\Steven\Dropbox\think about IT\PROJECTS\PLATAAN\Rookie2\Demo\ReverseEngeneering\export\T18.txt", Database="Demo Database NAV (11-0) BE", ServerName="THINKABOUTIT\SQL2016" ,Filter=Type=table;ID=18
+finsql.exe Command=ExportToNewSyntax, File="C:\Users\Steven\Dropbox\think about IT\PROJECTS\PLATAAN\Rookie2\Demo\ReverseEngeneering\export\P22.txt", Database="Demo Database NAV (11-0) BE", ServerName="THINKABOUTIT\SQL2016" ,Filter=Type=page;ID=22
+finsql.exe Command=ExportToNewSyntax, File="C:\Users\Steven\Dropbox\think about IT\PROJECTS\PLATAAN\Rookie2\Demo\ReverseEngeneering\export\P21.txt", Database="Demo Database NAV (11-0) BE", ServerName="THINKABOUTIT\SQL2016" ,Filter=Type=page;ID=21
+
+txt2al --source="C:\Users\Steven\Dropbox\think about IT\PROJECTS\PLATAAN\Rookie2\Demo\ReverseEngeneering\export" --target="C:\Users\Steven\Dropbox\think about IT\PROJECTS\PLATAAN\Rookie2\Demo\ReverseEngeneering\al"
+
+
+C:\Program Files (x86)\Microsoft Dynamics NAV\110\RoleTailored Client
