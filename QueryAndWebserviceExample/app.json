@@ -1,0 +1,23 @@
+{
+  "id": "2086ac15-8181-4266-ae21-d8b956be2c6f",
+  "name": "QueryAndWebserviceExample",
+  "publisher": "Steven Renders",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  }
+}
