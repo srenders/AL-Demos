@@ -1,0 +1,32 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "type": "al",
+//             "request": "launch",
+//             "name": "Your own server",
+//             "server": "https://ready20258.westeurope.cloudapp.azure.com",
+//             "serverInstance": "NAV",
+//             "tenant": "",
+//             "authentication": "UserPassword",
+//             "startupObjectId": 50133
+//         }
+//     ]
+// }
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Your own server",
+            "server": "http://localhost",
+            "serverInstance": "NAV2018BE",
+            "port": 7049,
+            "tenant": "",
+            "authentication": "Windows",
+            "startupObjectId": 22
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "4fc7e3bb-b5de-4648-a09a-e37e7bedb8c6",
+  "name": "Calcucator",
+  "publisher": "Calculator",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "media/Calculator.jpg",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  }
+}
